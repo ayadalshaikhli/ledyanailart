@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Be+Vietnam:wght@300&family=Fredoka+One&family=Pinyon+Script&display=swap");
+
+:root {
+  --font-main: "Be Vietnam", sans-serif;
+  --font-logo: "Alex Brush", cursive;
+  --first-color: #ffe3d6;
+  --secound-color: ;
+  --third-color: ;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--first-color);
+}
+
+/* ==================
+===== Nav Bar
+======================== */
+
+.navbar {
+  background-color: var(--first-color) !important;
+}
+
+/* Nav Bar */
+.navbar-brand img {
+  border-radius: 50%;
+  max-width: 50%;
+}
+
+/* =====================
+===== LOGO Main ========
+======================== */
+
+.image-logo img {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.main-picture {
+  animation: main-picture 2s ease-in-out 0s normal;
+}
+
+.image-logo h1 {
+  font-family: var(--font-logo);
+  font-size: 5em;
+  margin-top: -200px;
+  animation: text-logo 2s ease-in-out 0s normal;
+}
+.social {
+  margin-top: -700px;
+  animation: main-picture 3s ease-in-out 0s normal;
+}
+
+.social a {
+  text-decoration: none;
+  color: black;
+}
+
+.social .hidden {
+  display: none;
+}
+
+.social .s-1 {
+  animation: social-animation 2.8s ease-in-out 0s normal;
+}
+.social .s-2 {
+  animation: social-animation 2.6s ease-in-out 0s normal;
+}
+.social .s-3 {
+  animation: social-animation 2.4s ease-in-out 0s normal;
+}
+.social .s-4 {
+  animation: social-animation 2.2s ease-in-out 0s normal;
+}
+
+.fab {
+  font-size: 190%;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  object-fit: cover;
+}
+
+/* =====================
+===== Section Designs
+======================== */
+
+.section {
+  height: 100vh;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.section img {
+  max-width: 50%;
+  max-height: 70vh;
+  margin: 0 auto;
+}
+
+/* ====================
+===== KeyFrames
+======================== */
+
+@keyframes text-logo {
+  from {
+    opacity: 0;
+    transform: translateY(-600px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes main-picture {
+  from {
+    transform: translateX(800px);
+  }
+  to {
+  }
+}
+@keyframes social-animation {
+  from {
+    transform: translate(-1000px);
+  }
+  to {
+  }
+}
